@@ -20,8 +20,8 @@ public interface ProjectRepository extends CrudRepository<Project, Integer> {
 
     Optional<Project> findByName(String name);
 
-    @Modifying
+    /*@Modifying
     @Transactional
-    @Query("update Project p set p.date = :date where p.projectID = :id")
-    int updateDate(@Param("id") Integer id, @Param("date") Date date);
+    @Query("update project p set p.date = :date where p.projectID = :id")
+    int updateDate(@Param("id") Integer id, @Param("date") Date date);*/
 }

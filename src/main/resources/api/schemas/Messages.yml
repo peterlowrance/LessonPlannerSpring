@@ -1,0 +1,15 @@
+Messages:
+  type: object
+  properties:
+    code:
+      type: string
+    type:
+      type: string
+      enum:
+        - INFO
+        - WARN
+        - ERROR
+    message:
+      type: string
+    dataIndex:
+      type: string

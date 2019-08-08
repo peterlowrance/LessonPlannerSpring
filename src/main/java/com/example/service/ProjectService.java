@@ -77,7 +77,7 @@ public class ProjectService {
             System.out.println("parsed " + parser.parse(date).getTime());
             Date dateFormatted = new Date(parser.parse(date).getTime());
             System.out.println(date + "\nFormatted " + dateFormatted);
-            return projectRepository.updateDate(projectID, dateFormatted);
+            return 0; //return projectRepository.updateDate(projectID, dateFormatted); TODO
         } catch (ParseException e) {
             System.err.println(e.getMessage());
         }

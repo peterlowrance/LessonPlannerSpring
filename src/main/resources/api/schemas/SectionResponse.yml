@@ -1,0 +1,29 @@
+SectionResponse:
+  SectionList:
+    type: object
+    properties:
+      success:
+        type: boolean
+      data:
+        type: array
+        items:
+          $ref: "./Section.yml#/Section"
+      messages:
+        type: array
+        items:
+          $ref: "./Messages.yml#/Messages"
+      metadata:
+        $ref: "./Metadata.yml#/Metadata"
+  SectionObj:
+    type: object
+    properties:
+      success:
+        type: boolean
+      data:
+        $ref: "./Section.yml#/Section"
+      messages:
+        type: array
+        items:
+          $ref: "./Messages.yml#/Messages"
+      metadata:
+          $ref: "./Metadata.yml#/Metadata"

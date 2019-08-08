@@ -1,0 +1,8 @@
+Project:
+  type: object
+  properties:
+    projectID:
+      type: integer
+      format: int64
+    name:
+      type: string
