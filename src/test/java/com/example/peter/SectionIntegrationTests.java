@@ -1,7 +1,6 @@
-/*
 package com.example.peter;
 
-import com.example.models.project;
+import com.example.models.Project;
 import com.example.models.Section;
 import com.example.service.DescriptorService;
 import com.example.service.ProjectService;
@@ -95,10 +94,10 @@ public class SectionIntegrationTests {
     @Test
     public void testServiceFindProjectBySection(){
         Section s = sectionService.create("hasProjects");
-        project p1 = new project();
+        Project p1 = new Project();
         p1.setName("testProj1");
         p1.setProjectID(2193);
-        project p2 = new project();
+        Project p2 = new Project();
         p2.setName("testProj2");
         p2.setProjectID(9421);
         p2.setSection(s);
@@ -118,7 +117,7 @@ public class SectionIntegrationTests {
 
     @Test
     public void testProjectFindByName(){
-        project p = new project();
+        Project p = new Project();
         p.setName("testName");
         p.setProjectID(123);
         p.setSection(sectionService.findAll().stream().findFirst().get());
@@ -134,11 +133,10 @@ public class SectionIntegrationTests {
 
     @Test
     public void testProjectCreateNew(){
-        project p = new project();
+        Project p = new Project();
         p.setName("testName");
         p.setProjectID(342879);
         projectService.addProject(1, p);
         assertEquals(p, projectService.findByID(p.getProjectID()).get());
     }
 }
-*/

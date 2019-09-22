@@ -12,6 +12,7 @@ import lombok.AllArgsConstructor;
 @ProjectDataController
 public class SectionApiImpl implements SectionsApi {
 
+
     private final SectionService sectionService;
     private final SectionMapper sectionMapper;
 
