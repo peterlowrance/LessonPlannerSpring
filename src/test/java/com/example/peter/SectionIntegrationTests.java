@@ -1,3 +1,4 @@
+/*
 package com.example.peter;
 
 import com.example.models.Project;
@@ -140,3 +141,4 @@ public class SectionIntegrationTests {
         assertEquals(p, projectService.findByID(p.getProjectID()).get());
     }
 }
+*/

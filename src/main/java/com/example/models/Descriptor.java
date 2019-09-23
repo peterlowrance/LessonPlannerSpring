@@ -11,7 +11,9 @@ public class Descriptor {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer descriptorID;
+    @Column(length = 4000)
     private String text;
+    private Boolean bigHeader;
     private String header;
 
     @ManyToOne
@@ -33,6 +35,14 @@ public class Descriptor {
 
     public void setText(String text) {
         this.text = text;
+    }
+
+    public void setBigHeader(Boolean bigHeader) {
+        this.bigHeader = bigHeader;
+    }
+
+    public Boolean getBigHeader() {
+        return bigHeader;
     }
 
     public String getHeader() {
